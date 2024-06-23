@@ -16,7 +16,7 @@ export default function Form({todos, setTodos}) {
             {title: value, id: uuidv4(), is_completed: false},
         ])
         const updatedTodoList = JSON.stringify([...todos, newTodo])
-        localStorage.setItem("todos", updatedTodoList)
+        localStorage.setItem("todos", updatedTodoList);
         event.target.reset();
     };
 
