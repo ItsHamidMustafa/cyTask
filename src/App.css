@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+body {
+  font-family: 'poppins';
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+
+.text_large {
+  font-size: 32px;
+}
+
+.text_small {
+  font-size: 24px;
+}
+
+.wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 510px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+.todohero_section {
+  border: 1px solid #c2b39a;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-self: center;
+  width: 90%;
+  max-width: 455px;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.todohero_section div:last-child {
+  background-color: #88ab33;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.form {
+  align-self: center;
+  width: 97%;
+  max-width: 455px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 38px;
+}
+
+.form label {
+  width: 90%;
+}
+
+.form input {
+  background-color: #1f2937;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.todo_list {
+  display: flex;
+  align-self: center;
+  width: 97%;
+  max-width: 455px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 27px;
+  margin-bottom: 27px;
+  gap: 27px;
+}
+
+.todo_item,
+.edit-form input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 455px;
+  border: 1px solid #c2b39a;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.edit-form input {
+  outline: transparent;
+  width: calc(100% - 14px);
+  height: calc(100% - 18px);
+  border: transparent;
+}
+
+.todo_items_left,
+.todo_items_right {
+  display: flex;
+  align-items: center;
+}
+
+.todo_items_left {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  gap: 12px;
+  font-size: 16px;
+}
+
+.todo_items_right {
+  gap: 4px;
+}
+
+.todo_items_right button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin: 0px 5px;
+}
+
+.submit {
+  height: 100%;
+  width: 20%;
+  border-radius: 10px;
+  background: #88ab33;
+  border: none;
+  color: #ffff;
+}
